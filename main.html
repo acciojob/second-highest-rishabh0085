@@ -10,6 +10,12 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			arr.sort()
+			let n = arr.length
+			if(n <=1 || arr[0] == arr[n-1]){
+				return -Infinity;
+			}
+			return arr[n-2];
 			
 		}
 
@@ -21,7 +27,7 @@
 			}
 			alert(secondHighest(arr));
 		}
-		Main();
+		// Main();
 	</script>
 
     <script type="text/javascript" src="./script.js">
